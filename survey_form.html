@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Feedback Survey</title>
+</head>
+<body>
+    <header>
+        <h1 id="title">Customer Feedback Survey</h1>
+        <p id="description">We value your feedback. Please take a moment to share your thoughts with us.</p>
+    </header>
+    <main>
+        <form id="survey-form" action="#" method="post">
+            <section>
+                <label for="name" id="name-label">Customer Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </section>
+
+            <section>
+                <label for="email" id="email-label">Customer Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required>
+            </section>
+
+            <section>
+                <label for="number" id="number-label">Customer Number:</label>
+                <input type="number" id="number" name="number" placeholder="Enter a number" min="1" max="100" required>
+            </section>
+
+            <section>
+                <label for="dropdown">Select the Service You're Providing Feedback For:</label>
+                <select id="dropdown" name="dropdown" required>
+                    <option value="serviceA">Service A - Online Shopping</option>
+                    <option value="serviceB">Service B - Customer Support</option>
+                    <option value="serviceC">Service C - Mobile App</option>
+                    <option value="serviceD">Service D - Restaurant Dining</option>
+                </select>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Rate Your Experience:</legend>
+                    <input type="radio" id="radio1" name="radio-group" value="excellent" required>
+                    <label for="radio1">Excellent</label>
+                    <input type="radio" id="radio2" name="radio-group" value="good" required>
+                    <label for="radio2">Good</label>
+                    <input type="radio" id="radio3" name="radio-group" value="average" required>
+                    <label for="radio3">Average</label>
+                    <input type="radio" id="radio4" name="radio-group" value="poor" required>
+                    <label for="radio4">Poor</label>
+                </fieldset>
+            </section>
+
+            <section>
+                <fieldset>
+                    <legend>Select Any Additional Services Used:</legend>
+                    <input type="checkbox" id="checkbox1" name="additional-services" value="serviceE">
+                    <label for="checkbox1">Service E - Home Delivery</label>
+                    <input type="checkbox" id="checkbox2" name="additional-services" value="serviceF">
+                    <label for="checkbox2">Service F - Live Chat Support</label>
+                    <input type="checkbox" id="checkbox3" name="additional-services" value="serviceG">
+                    <label for="checkbox3">Service G - Mobile Ordering</label>
+                </fieldset>
+            </section>
+
+            <section>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Enter your comments"></textarea>
+            </section>
+
+            <section>
+                <button type="submit" id="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
